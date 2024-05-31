@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> GOATED PAGE </title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head> 
+
+    <body>
+        <section class="Campus-life"> 
+            <nav>
+                <a href="Campus-life.html">
+                <div class="nav-links">
+                    <ul>
+                        <li><a href="home.html">HOME</a></li>
+                        <li><a href="academics.html">Background</a></li>
+                        <li><a href="Campus-life.html">Methods and Techniques</a></li>
+                        <li><a href="NewsUpdates.html">Case Studies</a></li>
+                        <li><a href="contact.html">CONTACT</a></li>  
+                    </ul>
+                </div>
+            </nav>
+            <h1> METHODS AND TECHNIQUES</h1>
+        </section>
+
+        
+        <section class="about-us">
+            <div class="campus-life-dropdown">
+                <label for="section-select">SELECT SECTION:</label>
+                <select id="section-select" onchange="changeSection()">
+                    <option value="" selected disabled>Select an option</option>
+                    <option value="student-organizations"><a href="student-organizations.html">Methods</a></option>
+                    <option value="events-and-activities"><a href="events-and-activities.html">Techniques</a></option>
+                </select>
+            </div>
+    
+            <div class="campus-life-content" id="student-organizations">
+                <h1>Methods:</h1>
+                <p>
+					<br><h1>1. Mathematical Modeling and Simulation</h1>
+					<br>-Neural Network Models
+					<br>-Compartmental Models
+					<br><h1>2.Data Analysis and Machine Learning</h1>
+					<br><h1>3.Neuroinformatics</h1>
+					<br>-Data Management and Sharing
+					<br>-Standardization and Ontologies
+					<br><h1>4.Brain-Computer Interfaces (BCIs)</h1>
+					<br><h1>5.Computational Neuroimaging</h1>
+					<br><h1>6.Large-Scale Brain Simulations</h1>
+					<br><h1>7.Computational Cognitive Neuroscience</h1>
+					<br><h1>8.Bioinformatics and Genomics</h1>
+					<br><h1>9.Dynamical Systems and Network Theory</h1>
+					<br><h1>10.Computational Psychiatry</h1>
+				</p>
+            </div>
+    
+            <div class="campus-life-content" id="events-and-activities">
+                <h1>Techniques:</h1>
+                <p>Calendar of academic and social events. Highlights from past events through images or videos.</p>
+				<br><h1>1.Neural Network Models</h1>
+				<br>-Hodgkin-Huxley Model
+					<br>-Izhikevich Model
+					<br><h1>2.Compartmental Models</h1>
+					<br>-NEURON
+					<br>-GENESIS
+					<br><h1>3.Machine Learning Algorithms</h1>
+					<br>-Support Vector Machines (SVMs)
+					<br>-Random Forests
+					<br>-Deep Learning (Convolutional Neural Networks, Recurrent Neural Networks)
+					<br><h1>4.Dimensionality Reduction</h1>
+					<br>-Principal Component Analysis (PCA)
+					<br>-t-Distributed Stochastic Neighbor Embedding (t-SNE)
+					<br><h1>5.Data Management and Sharing</h1>
+					<br>-Allen Brain Atlas
+					<br>-Human Connectome Project
+					<br><h1>6.Standardization and Ontologies</h1>
+					<br>-NeuroML
+					<br>-Brain Imaging Data Structure (BIDS)
+					<br><h1>7.Signal Processing</h1>
+					<br><h1>8.Machine Learning for BCI</h1>
+					<br><h1>9.MRI and fMRI Analysis</h1>
+					<br>-Voxel-Based Morphometry (VBM)
+					<br>-Functional Connectivity Analysis
+					<br><h1>10.Diffusion Tensor Imaging (DTI)</h1>
+					<br><h1>11.Connectomics</h1>
+					<br><h1>12.Whole-Brain Simulations</h1>
+					<br><h1>13.Modeling Cognitive Processes</h1>
+					<br>-Bayesian Models
+					<br>-Reinforcement Learning Models
+					<br><h1>14.Genetic Data Analysis</h1>
+					<br><h1>15.Epigenomics</h1>
+					<br><h1>16.Complex Network Analysis</h1>
+					<br><h1>17.Dynamical Systems Theory</h1>
+					<br><h1>18.Modeling Mental Disorders</h1>
+					<br><h1>19.Personalized Medicine</h1>
+            </div>
+        </section>
+
+        
+
+        <section class="footer">
+            <h4> About Us</h4>
+            <p> 2024 Philippine Science High School - Caraga Region Campus. All rights reserved.</p>
+            <a href="https://crc.pshs.edu.ph/data-privacy-policy"> Privacy Policy</a> <br>
+            <a href="index.html"> Back to the Top</a>
+            <div class="icons">
+                <i class="fa fa-facebook"></i>
+                <i class="fa fa-twitter"></i>
+            </div>              
+        </section>
+
+        <script>
+            function changeSection() {
+                var selectBox = document.getElementById("section-select");
+                var selectedValue = selectBox.options[selectBox.selectedIndex].value;
+    
+                
+                var contentSections = document.querySelectorAll(".campus-life-content");
+                contentSections.forEach(function (section) {
+                    section.style.display = "none";
+                });
+    
+                
+                document.getElementById(selectedValue).style.display = "block";
+            }
+        </script>
+    </body>
+</html>  
